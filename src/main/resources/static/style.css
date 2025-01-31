@@ -1,0 +1,113 @@
+/* Global Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color:turquoise; /* Light Blue-gray background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Header Styling */
+h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Sudoku Container Styles */
+.sudoku-container {
+    background-color: #ffffff; /* White background for Sudoku grid */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styling */
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+/* Table Cell Styling */
+td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border: 2px solid #ddd;
+    font-size: 22px;
+}
+
+/* Input Field Styling */
+input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 22px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+/* Focused Input Field */
+input:focus {
+    border-color: #4CAF50;
+    background-color: #e9ffe5;
+}
+
+/* Button Styling */
+button {
+    margin-top: 30px;
+    padding: 12px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #007bff; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Button Active Effect */
+button:active {
+    background-color: #004085; /* Even darker blue on click */
+}
+
+/* Adding a Gradient Background Color to Button */
+button {
+    background: linear-gradient(to right, #007bff, #0056b3);
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 600px) {
+    table {
+        width: 100%;
+    }
+
+    td {
+        width: 40px;
+        height: 40px;
+    }
+
+    input {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px 0;
+    }
+}
